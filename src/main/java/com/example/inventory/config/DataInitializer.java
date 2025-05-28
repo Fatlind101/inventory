@@ -22,7 +22,7 @@ public class DataInitializer {
             StockEntryRepository stockEntryRepository
     ) {
         return args -> {
-            // Create categories
+
             Category electronics = new Category();
             electronics.setName("Electronics");
             categoryRepository.save(electronics);
@@ -31,7 +31,6 @@ public class DataInitializer {
             food.setName("Food");
             categoryRepository.save(food);
 
-            // Create products
             Product laptop = new Product();
             laptop.setName("Laptop");
             laptop.setQuantity(10);
@@ -46,7 +45,6 @@ public class DataInitializer {
             apple.setCategory(food);
             productRepository.save(apple);
 
-            // Add stock entries
             StockEntry se1 = new StockEntry();
             se1.setProduct(laptop);
             se1.setQuantityChange(-2);

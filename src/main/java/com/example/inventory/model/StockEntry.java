@@ -18,7 +18,6 @@ public class StockEntry {
 
     private LocalDateTime timestamp;
 
-    // === Constructors ===
     public StockEntry() {}
 
     public StockEntry(Product product, int quantityChange, LocalDateTime timestamp) {
@@ -27,7 +26,6 @@ public class StockEntry {
         this.timestamp = timestamp;
     }
 
-    // === Getters & Setters ===
     public Long getId() {
         return id;
     }

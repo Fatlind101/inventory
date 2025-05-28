@@ -22,7 +22,6 @@ public class Product {
     @JsonIgnore
     private List<StockEntry> stockEntries;
 
-    // === Constructors ===
     public Product() {}
 
     public Product(String name, int quantity, double price, Category category) {
@@ -32,7 +31,6 @@ public class Product {
         this.category = category;
     }
 
-    // === Getters and Setters ===
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 

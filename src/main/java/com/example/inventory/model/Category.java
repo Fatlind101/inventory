@@ -17,14 +17,12 @@ public class Category {
     @JsonIgnore
     private List<Product> products;
 
-    // === Constructors ===
     public Category() {}
 
     public Category(String name) {
         this.name = name;
     }
 
-    // === Getters and Setters ===
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
